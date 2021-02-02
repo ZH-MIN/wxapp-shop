@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/pay/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff6700",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "名优购",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ff6700",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icons/index0.png",
+        "selectedIconPath": "/icons/index1.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "/icons/category0.png",
+        "selectedIconPath": "/icons/category1.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "/icons/cart0.png",
+        "selectedIconPath": "/icons/cart1.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "个人中心",
+        "iconPath": "/icons/me0.png",
+        "selectedIconPath": "/icons/me1.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

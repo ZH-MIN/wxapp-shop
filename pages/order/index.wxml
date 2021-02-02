@@ -1,0 +1,19 @@
+<!--pages/order/index.wxml-->
+<tabs tabs="{{tabs}}" bindtabsMenuChange="tabsMenuChange">
+	<view class="order_main">
+		<view wx:for="{{orderList}}" wx:key="order_id" class="order_item">
+			<view class="order_num between">
+				<text class="order_text">订单编号</text>
+				<text class="order_value">{{item.order_number}}</text>
+			</view>
+			<view class="order_price between">
+				<text class="order_text">订单价格</text>
+				<text class="order_value">￥{{item.order_price}}</text>
+			</view>
+			<view class="order_time between">
+				<text class="order_text">订单日期</text>
+				<text class="order_value">{{item.create_time_cn}}</text>
+			</view>
+		</view>
+	</view>
+</tabs>

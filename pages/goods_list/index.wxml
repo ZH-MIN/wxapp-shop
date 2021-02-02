@@ -1,0 +1,27 @@
+<!--pages/goods_list/index.wxml-->
+<view class="goods_list">
+	<!-- 搜索框 -->
+	<searchInput></searchInput>
+	<!-- 选项卡 -->
+	<tabs tabs="{{tabs}}" bindtabsMenuChange="tabsMenuChange">
+		<!-- <block wx:for="{{tabs}}" wx:key="index">
+			<view wx:if="{{item.isActive}}">{{item.id}}</view>
+		</block> -->
+		<block wx:if="{{tabs[0].isActive}}">
+			<view class="first_tab">
+				<navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}" class="goods_item" wx:for="{{goodsList}}" wx:for-item="item" wx:key="goods_id">
+					<view class="goods_img">
+						<image src="{{item.goods_small_logo?item.goods_small_logo:'/icons/noimg.png'}}" mode="widthFix"></image>
+					</view>
+					<view class="goods_info">
+						<view class="goods_name">{{item.goods_name}}</view>
+						<view class="goods_price">{{item.goods_price}}</view>
+					</view>
+				</navigator>
+				<view class="bottomMsg">{{bottomMsg}}</view>
+			</view>
+		</block>
+		<block wx:elif="{{tabs[1].isActive}}"></block>
+		<block wx:elif="{{tabs[2].isActive}}"></block>
+	</tabs>
+</view>
